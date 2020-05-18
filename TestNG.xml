@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ScheduleBusTest" parallel="tests" thread-count="5">
+    <test name="ChromeTest" verbose="1" parallel="true"  thread-count = "2" >
+        <parameter name="browserName" value="chrome" />
+        <classes>
+            <class name="pageobject_model.test.WebDriverSeleniumBegginersGuideTest" />
+            <!-- <class name="pageobject_model.test.VerificationEnteredTextTest" />-->
+            <class name="pageobject_model.test.MouseOverThisAlertTest" />
+
+        </classes>
+    </test>
+    <!--<test name="FirefoxTest" verbose="1" parallel="true">-->
+        <!--<parameter name="browserName" value="firefox" />-->
+        <!--<classes>-->
+            <!--<class name="pageobject_model.test.WebDriverSeleniumBegginersGuideTest" />-->
+            <!--<class name="pageobject_model.test.MouseOverThisAlertTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>
